@@ -9,19 +9,19 @@ read -p $'Enter Your Device: ' device
 
 if [[ $device == 1 || $device == 01 ]]; then
 chmod +x .android-reboot
-./.android-reboot
+python .android-reboot
 
 elif [[ $device == 2 || $device == 02 ]]; then
 chmod +x .iphone-reboot
-./.iphone-reboot
+python .iphone-reboot
 
 elif [[ $device == 3 || $device == 03 ]]; then
 chmod +x .windows-reboot
-./.windows-reboot
+python .windows-reboot
 
 elif [[ $device == 4 || $device == 04 ]]; then
 chmod +x .reboot
-./.reboot
+python .reboot
 
 elif [[ $device == 99 ]]; then
 clear
@@ -29,7 +29,7 @@ exit
 
 else
 clear
-exit
+os-start
 fi
 }
 
