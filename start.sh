@@ -1,3 +1,6 @@
+apt install tsu -y
+clear
+
 os-start() {
 clear
 printf "[01] Android Device\n"
